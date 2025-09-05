@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+    <title>Your Personalized Fitness Bot</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    :root{
+      --bg:#f6f8fb; --card:#fff; --muted:#666; --accent:#0b6efd;
+      --glass: rgba(11,110,237,0.06);
+    }
+    body{font-family:Inter,ui-sans-serif,system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:var(--bg); color:#111; margin:0; padding:28px;}
+    .container{max-width:960px; margin:0 auto;}
+    .card{background:var(--card); border-radius:10px; padding:18px; box-shadow:0 6px 20px rgba(17,24,39,0.06); margin-bottom:16px;}
+    h1{margin:0 0 8px 0; font-size:22px;}
+    .meta{color:var(--muted); font-size:14px; margin-bottom:12px;}
+    .features pre{background:#f3f4f6; padding:12px; border-radius:8px; overflow:auto;}
+    .chips{display:flex; gap:8px; flex-wrap:wrap; margin:8px 0;}
+    .chip{background:var(--glass); color:var(--accent); padding:6px 10px; border-radius:999px; font-weight:600; font-size:13px;}
+    .weak-list{color:#222; margin:8px 0 0 0;}
+    details{margin:12px 0; border:1px solid rgba(0,0,0,0.06); border-radius:8px; background:linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.95)); padding:6px;}
+    summary{cursor:pointer; padding:10px 12px; display:flex; justify-content:space-between; align-items:center; list-style:none; font-weight:700;}
+    .day-head{display:flex; gap:10px; align-items:center;}
+    .badge{background:#eef6ff; color:var(--accent); padding:6px 8px; border-radius:6px; font-weight:700;}
+    .exercise-list{padding:10px 12px 18px 12px;}
+    .exercise{display:flex; justify-content:space-between; gap:12px; padding:8px 0; border-bottom:1px dashed #eef2ff;}
+    .exercise:last-child{border-bottom:none;}
+    .ex-left{display:flex; gap:12px; align-items:center;}
+    .role{font-size:12px; background:#f2f7ff; color:#0846a4; padding:6px 8px; border-radius:6px; font-weight:700;}
+    .ex-meta{color:var(--muted); font-size:13px;}
+    .small{font-size:13px; color:var(--muted);}
+    .back-link{display:inline-block; margin-top:8px; color:var(--accent); text-decoration:none; font-weight:700;}
+    .priority{background:#fff4e6; color:#c66b00; padding:6px 10px; border-radius:8px; font-weight:700; display:inline-block; margin-left:8px;}
+    .right-col{min-width:180px; text-align:right;}
+    @media (max-width:700px){
+      .exercise{flex-direction:column; align-items:flex-start;}
+      .right-col{width:100%; text-align:left; margin-top:6px;}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>Analysis Results</h1>
+      <div class="meta">Personalized weekly plan — Goal: <strong>{{ goal }}</strong></div>
+
+      <div style="display:flex; gap:12px; align-items:center; margin-bottom:10px; flex-wrap:wrap;">
+        <div class="chips">
+          {% if prioritized %}
+            {% for p in prioritized %}
+              <span class="chip">{{ p.replace('_',' ').title() }}</span>
+            {% endfor %}
+          {% else %}
+            <span class="chip">No prioritized muscles</span>
+          {% endif %}
+        </div>
+        {% if prioritized %}
+          <div class="small">Top priority: <span class="priority">{{ prioritized[0].replace('_',' ').title() }}</span></div>
+        {% endif %}
+      </div>
+
+      <div style="display:flex; gap:16px; flex-wrap:wrap; align-items:flex-start;">
+        <div style="flex:1; min-width:260px;">
+          <h3 style="margin:6px 0 8px 0;">Detected weaknesses</h3>
+          {% if weaknesses %}
+            <ul class="weak-list">
+              {% for w in weaknesses %}
+                <li>{{ w.replace('/', ' — ').replace('_',' ').title() }}</li>
+              {% endfor %}
+            </ul>
+          {% else %}
+            <p class="small">No strong asymmetries or weakness flags detected (thresholds are conservative).</p>
+          {% endif %}
+        </div>
+
+        <div style="width:320px;">
+          <h3 style="margin:6px 0 8px 0;">Extracted features</h3>
+          <div class="features">
+            <pre>{{ features | tojson(indent=2) }}</pre>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="card">
+      <h2 style="margin:0 0 8px 0;">Weekly Plan</h2>
+      <p class="small">Below is a day-by-day plan generated from your physique analysis and goal. Weakness-targeted exercises are labeled <strong>weakness_fix</strong>. Primary movements are labeled <strong>primary</strong>.</p>
+
+      {% for day_label, exercises in weekly_plan.items() %}
+        <details {% if loop.first %}open{% endif %}>
+          <summary>
+            <div class="day-head">
+              <span class="badge"> {{ loop.index }} </span>
+              <div style="display:flex; flex-direction:column;">
+                <span style="font-weight:800;">{{ day_label }}</span>
+                <span class="small">{{ exercises | length }} exercises • {{ exercises | map(attribute='muscle_group') | list | unique | join(', ') }}</span>
+              </div>
+            </div>
+            <div style="font-size:13px; color:var(--muted)">{{ goal | replace('_', ' ') | title }}
+          </div>
+          </summary>
+
+          <div class="exercise-list">
+            {% for ex in exercises %}
+              <div class="exercise">
+                <div class="ex-left">
+                  <div style="width:8px; height:40px; border-radius:6px; background:#f0f7ff; display:inline-block; margin-right:8px;"></div>
+                  <div>
+                    <div style="font-weight:800;">{{ ex.name }}</div>
+                    <div class="ex-meta">{{ ex.muscle_group.replace('_',' ').title() }} • {{ ex.difficulty.title() }}</div>
+                  </div>
+                </div>
+                <div class="right-col">
+                  <div class="role">{{ ex.role.replace('_',' ').title() }}</div>
+                  <div class="small" style="margin-top:6px;">Suggested: 
+                    {% if goal == 'strength' %}
+                      {% if ex.difficulty == 'beginner' %}4 sets × 6-8 reps{% elif ex.difficulty == 'intermediate' %}4 sets × 5-6 reps{% else %}5 sets × 3-5 reps{% endif %}
+                    {% elif goal == 'weight_loss' %}
+                      {% if ex.role == 'primary' %}3 sets × 10-15 reps (compound focus){% else %}3 sets × 12-20 reps (conditioning){% endif %}
+                    {% else %}
+                      3-4 sets × 6-12 reps
+                    {% endif %}
+                  </div>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        </details>
+      {% endfor %}
+
+      <a class="back-link" href="{{ url_for('index') }}">&larr; Run another analysis</a>
+    </div>
+
+    <div style="text-align:center; color:var(--muted); margin-top:18px;">
+      <small>Tip: This plan is auto-generated from photos — verify form & consult a trainer for injuries. Thresholds are experimental.</small>
+    </div>
+  </div>
+</body>
+</html>

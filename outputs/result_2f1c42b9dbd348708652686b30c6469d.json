@@ -1,0 +1,173 @@
+{
+  "features": {
+    "mean_shoulder_width_px": 29.505233602997333,
+    "mean_hip_width_px": 20.972421383739295,
+    "mean_ankle_dist_px": 27.409685117574934,
+    "shoulder_to_hip_ratio_px": 1.4068586386031328,
+    "avg_shoulder_vertical_asym_px": 0.6967806816101074,
+    "avg_hip_vertical_asym_px": 9.3846475481987,
+    "mean_shoulder_width_norm": 0.21750511767750677,
+    "mean_hip_width_norm": 0.15460338468864307,
+    "ankle_dist_norm": 0.2020572643897288,
+    "shoulder_vertical_asym_norm": 0.00513649090829852,
+    "hip_vertical_asym_norm": 0.0691812475304559,
+    "estimated_pixel_height": 135.6530545949936
+  },
+  "weaknesses": [
+    "glutes/legs",
+    "hip_asymmetry"
+  ],
+  "weekly_plan": {
+    "Day 1 \u2014 Upper": [
+      {
+        "id": "chest_press_machine",
+        "name": "Chest Press Machine",
+        "muscle_group": "chest",
+        "difficulty": "beginner",
+        "role": "primary"
+      },
+      {
+        "id": "single_arm_press",
+        "name": "Single-Arm Dumbbell Press",
+        "muscle_group": "shoulders",
+        "difficulty": "intermediate",
+        "role": "primary"
+      },
+      {
+        "id": "single_arm_press",
+        "name": "Single-Arm Dumbbell Press",
+        "muscle_group": "shoulders",
+        "difficulty": "intermediate",
+        "role": "weakness_fix"
+      },
+      {
+        "id": "single_arm_press",
+        "name": "Single-Arm Dumbbell Press",
+        "muscle_group": "shoulders",
+        "difficulty": "intermediate",
+        "role": "weakness_fix"
+      },
+      {
+        "id": "single_arm_press",
+        "name": "Single-Arm Dumbbell Press",
+        "muscle_group": "shoulders",
+        "difficulty": "intermediate",
+        "role": "weakness_fix"
+      }
+    ],
+    "Day 2 \u2014 Lower": [
+      {
+        "id": "box_squat",
+        "name": "Box Squat",
+        "muscle_group": "legs",
+        "difficulty": "intermediate",
+        "role": "primary"
+      },
+      {
+        "id": "pistol_squat",
+        "name": "Pistol Squat",
+        "muscle_group": "legs",
+        "difficulty": "advanced",
+        "role": "primary"
+      },
+      {
+        "id": "farmer_carry",
+        "name": "Farmer\u2019s Carry",
+        "muscle_group": "legs",
+        "difficulty": "beginner",
+        "role": "weakness_fix"
+      },
+      {
+        "id": "jump_squat",
+        "name": "Jump Squat",
+        "muscle_group": "legs",
+        "difficulty": "intermediate",
+        "role": "weakness_fix"
+      },
+      {
+        "id": "leg_curl",
+        "name": "Leg Curl (Machine)",
+        "muscle_group": "legs",
+        "difficulty": "beginner",
+        "role": "weakness_fix"
+      }
+    ],
+    "Day 3 \u2014 Push": [
+      {
+        "id": "bench_press",
+        "name": "Barbell Bench Press",
+        "muscle_group": "chest",
+        "difficulty": "intermediate",
+        "role": "primary"
+      },
+      {
+        "id": "dip_with_forward_lean",
+        "name": "Dip (Forward Lean for Shoulders)",
+        "muscle_group": "shoulders",
+        "difficulty": "intermediate",
+        "role": "primary"
+      },
+      {
+        "id": "negative_pushup",
+        "name": "Negative Push-up",
+        "muscle_group": "chest",
+        "difficulty": "beginner",
+        "role": "accessory"
+      },
+      {
+        "id": "handstand_hold",
+        "name": "Wall Handstand Hold",
+        "muscle_group": "shoulders",
+        "difficulty": "intermediate",
+        "role": "accessory"
+      },
+      {
+        "id": "front_raise",
+        "name": "Front Delt Raise",
+        "muscle_group": "shoulders",
+        "difficulty": "beginner",
+        "role": "accessory"
+      }
+    ],
+    "Day 4 \u2014 Pull/Core": [
+      {
+        "id": "dragon_flag",
+        "name": "Dragon Flag",
+        "muscle_group": "core",
+        "difficulty": "advanced",
+        "role": "primary"
+      },
+      {
+        "id": "dragon_flag",
+        "name": "Dragon Flag",
+        "muscle_group": "core",
+        "difficulty": "advanced",
+        "role": "weakness_fix"
+      },
+      {
+        "id": "dragon_flag",
+        "name": "Dragon Flag",
+        "muscle_group": "core",
+        "difficulty": "advanced",
+        "role": "weakness_fix"
+      },
+      {
+        "id": "dragon_flag",
+        "name": "Dragon Flag",
+        "muscle_group": "core",
+        "difficulty": "advanced",
+        "role": "weakness_fix"
+      },
+      {
+        "id": "dragon_flag",
+        "name": "Dragon Flag",
+        "muscle_group": "core",
+        "difficulty": "advanced",
+        "role": "weakness_fix"
+      }
+    ]
+  },
+  "goal": "weight_loss",
+  "height": "170",
+  "weight": "70"
+}

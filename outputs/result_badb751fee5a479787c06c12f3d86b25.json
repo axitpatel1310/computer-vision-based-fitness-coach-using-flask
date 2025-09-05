@@ -1,0 +1,97 @@
+{
+  "features": {
+    "mean_shoulder_width_px": 29.505233602997322,
+    "mean_hip_width_px": 20.972421383739302,
+    "mean_ankle_dist_px": 27.409685117574934,
+    "shoulder_to_hip_ratio_px": 1.4068586386031317,
+    "avg_shoulder_vertical_asym_px": 0.6967806816101074,
+    "avg_hip_vertical_asym_px": 9.3846475481987,
+    "mean_shoulder_width_norm": 0.2175051176775067,
+    "mean_hip_width_norm": 0.15460338468864313,
+    "ankle_dist_norm": 0.2020572643897288,
+    "shoulder_vertical_asym_norm": 0.00513649090829852,
+    "hip_vertical_asym_norm": 0.0691812475304559,
+    "estimated_pixel_height": 135.6530545949936
+  },
+  "weaknesses": [
+    "glutes/legs",
+    "hip_asymmetry"
+  ],
+  "session": [
+    {
+      "id": "romanian_deadlift",
+      "name": "Romanian Deadlift",
+      "muscle_group": "legs",
+      "difficulty": "intermediate",
+      "type": "strength",
+      "progression": [
+        "kettlebell_swing",
+        "romanian_deadlift",
+        "deficit_rdl"
+      ]
+    },
+    {
+      "id": "cable_lift",
+      "name": "Cable Lift",
+      "muscle_group": "core",
+      "difficulty": "intermediate",
+      "type": "rotation",
+      "progression": [
+        "band_lift",
+        "cable_lift",
+        "reverse_cable_lift"
+      ]
+    },
+    {
+      "id": "loaded_carry",
+      "name": "Loaded Carry (Any Variation)",
+      "muscle_group": "core",
+      "difficulty": "beginner",
+      "type": "stability",
+      "progression": [
+        "carry",
+        "loaded_carry",
+        "uneven_load_carry"
+      ]
+    },
+    {
+      "id": "wall_sit",
+      "name": "Wall Sit",
+      "muscle_group": "legs",
+      "difficulty": "beginner",
+      "type": "endurance",
+      "progression": [
+        "static_squat",
+        "wall_sit",
+        "weighted_wall_sit"
+      ]
+    },
+    {
+      "id": "deadlift",
+      "name": "Deadlift",
+      "muscle_group": "legs",
+      "difficulty": "advanced",
+      "type": "strength",
+      "progression": [
+        "russian_kettlebell_swing",
+        "deadlift",
+        "sumo_deadlift"
+      ]
+    },
+    {
+      "id": "hip_thrust",
+      "name": "Hip Thrust",
+      "muscle_group": "legs",
+      "difficulty": "beginner",
+      "type": "strength",
+      "progression": [
+        "glute_bridge",
+        "hip_thrust",
+        "barbell_hip_thrust"
+      ]
+    }
+  ],
+  "goal": "weight_loss",
+  "height": "170",
+  "weight": "70"
+}

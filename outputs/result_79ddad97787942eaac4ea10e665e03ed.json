@@ -1,0 +1,245 @@
+{
+  "features": {
+    "mean_shoulder_width_px": 29.50523360299733,
+    "mean_hip_width_px": 20.9724213837393,
+    "mean_ankle_dist_px": 27.40968511757493,
+    "shoulder_to_hip_ratio_px": 1.4068586386031323,
+    "avg_shoulder_vertical_asym_px": 0.6967806816101074,
+    "avg_hip_vertical_asym_px": 9.3846475481987,
+    "mean_shoulder_width_norm": 0.21750511767750674,
+    "mean_hip_width_norm": 0.1546033846886431,
+    "ankle_dist_norm": 0.20205726438972876,
+    "shoulder_vertical_asym_norm": 0.00513649090829852,
+    "hip_vertical_asym_norm": 0.0691812475304559,
+    "estimated_pixel_height": 135.6530545949936
+  },
+  "weaknesses": [
+    "glutes/legs",
+    "hip_asymmetry"
+  ],
+  "weekly_plan": {
+    "Day 1 \u2014 Push": [
+      {
+        "id": "decline_bench",
+        "name": "Decline Bench Press",
+        "muscle_group": "chest",
+        "difficulty": "advanced",
+        "role": "primary"
+      },
+      {
+        "id": "barbell_press",
+        "name": "Overhead Barbell Press",
+        "muscle_group": "shoulders",
+        "difficulty": "intermediate",
+        "role": "primary"
+      },
+      {
+        "id": "shrug",
+        "name": "Dumbbell Shrug",
+        "muscle_group": "shoulders",
+        "difficulty": "beginner",
+        "role": "accessory"
+      },
+      {
+        "id": "overhead_carry",
+        "name": "Overhead Carry",
+        "muscle_group": "shoulders",
+        "difficulty": "intermediate",
+        "role": "accessory"
+      },
+      {
+        "id": "cable_crossover",
+        "name": "Cable Crossover",
+        "muscle_group": "chest",
+        "difficulty": "intermediate",
+        "role": "accessory"
+      },
+      {
+        "id": "bear_crawl",
+        "name": "Bear Crawl",
+        "muscle_group": "shoulders",
+        "difficulty": "intermediate",
+        "role": "accessory"
+      }
+    ],
+    "Day 2 \u2014 Pull": [
+      {
+        "id": "step_up",
+        "name": "Step-up",
+        "muscle_group": "legs",
+        "difficulty": "beginner",
+        "role": "accessory"
+      },
+      {
+        "id": "glute_bridge",
+        "name": "Glute Bridge",
+        "muscle_group": "legs",
+        "difficulty": "beginner",
+        "role": "accessory"
+      },
+      {
+        "id": "hanging_windshield",
+        "name": "Hanging Windshield Wiper",
+        "muscle_group": "core",
+        "difficulty": "advanced",
+        "role": "accessory"
+      },
+      {
+        "id": "explosive_pushup",
+        "name": "Explosive Push-up",
+        "muscle_group": "chest",
+        "difficulty": "advanced",
+        "role": "accessory"
+      },
+      {
+        "id": "barbell_curl",
+        "name": "Barbell Bicep Curl",
+        "muscle_group": "arms",
+        "difficulty": "beginner",
+        "role": "accessory"
+      },
+      {
+        "id": "kickback",
+        "name": "Triceps Kickback",
+        "muscle_group": "arms",
+        "difficulty": "intermediate",
+        "role": "accessory"
+      }
+    ],
+    "Day 3 \u2014 Legs": [
+      {
+        "id": "reverse_lunge",
+        "name": "Reverse Lunge",
+        "muscle_group": "legs",
+        "difficulty": "beginner",
+        "role": "primary"
+      },
+      {
+        "id": "leg_press",
+        "name": "Leg Press",
+        "muscle_group": "legs",
+        "difficulty": "beginner",
+        "role": "primary"
+      },
+      {
+        "id": "curtsy_lunge",
+        "name": "Curtsy Lunge",
+        "muscle_group": "legs",
+        "difficulty": "intermediate",
+        "role": "weakness_fix"
+      },
+      {
+        "id": "leg_curl",
+        "name": "Leg Curl (Machine)",
+        "muscle_group": "legs",
+        "difficulty": "beginner",
+        "role": "weakness_fix"
+      },
+      {
+        "id": "squat_jump",
+        "name": "Squat Jump",
+        "muscle_group": "legs",
+        "difficulty": "intermediate",
+        "role": "weakness_fix"
+      },
+      {
+        "id": "lateral_lunge",
+        "name": "Lateral Lunge",
+        "muscle_group": "legs",
+        "difficulty": "beginner",
+        "role": "weakness_fix"
+      }
+    ],
+    "Day 4 \u2014 Core + Mobility": [
+      {
+        "id": "stir_the_pot",
+        "name": "Stir the Pot (on Ball)",
+        "muscle_group": "core",
+        "difficulty": "advanced",
+        "role": "primary"
+      },
+      {
+        "id": "flutter_kick",
+        "name": "Flutter Kick",
+        "muscle_group": "core",
+        "difficulty": "beginner",
+        "role": "weakness_fix"
+      },
+      {
+        "id": "flutter_kick",
+        "name": "Flutter Kick",
+        "muscle_group": "core",
+        "difficulty": "beginner",
+        "role": "weakness_fix"
+      },
+      {
+        "id": "flutter_kick",
+        "name": "Flutter Kick",
+        "muscle_group": "core",
+        "difficulty": "beginner",
+        "role": "weakness_fix"
+      },
+      {
+        "id": "flutter_kick",
+        "name": "Flutter Kick",
+        "muscle_group": "core",
+        "difficulty": "beginner",
+        "role": "weakness_fix"
+      },
+      {
+        "id": "flutter_kick",
+        "name": "Flutter Kick",
+        "muscle_group": "core",
+        "difficulty": "beginner",
+        "role": "weakness_fix"
+      }
+    ],
+    "Day 5 \u2014 Full Body / Conditioning": [
+      {
+        "id": "floor_press",
+        "name": "Floor Press",
+        "muscle_group": "chest",
+        "difficulty": "beginner",
+        "role": "primary"
+      },
+      {
+        "id": "back_squat",
+        "name": "Back Squat",
+        "muscle_group": "legs",
+        "difficulty": "intermediate",
+        "role": "primary"
+      },
+      {
+        "id": "box_squat",
+        "name": "Box Squat",
+        "muscle_group": "legs",
+        "difficulty": "intermediate",
+        "role": "primary"
+      },
+      {
+        "id": "Russian_twist",
+        "name": "Russian Twist",
+        "muscle_group": "core",
+        "difficulty": "beginner",
+        "role": "primary"
+      },
+      {
+        "id": "jump_squat",
+        "name": "Jump Squat",
+        "muscle_group": "legs",
+        "difficulty": "intermediate",
+        "role": "weakness_fix"
+      },
+      {
+        "id": "jump_squat",
+        "name": "Jump Squat",
+        "muscle_group": "legs",
+        "difficulty": "intermediate",
+        "role": "weakness_fix"
+      }
+    ]
+  },
+  "goal": "strength",
+  "height": "170",
+  "weight": "70"
+}

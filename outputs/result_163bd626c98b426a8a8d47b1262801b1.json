@@ -1,0 +1,245 @@
+{
+  "features": {
+    "mean_shoulder_width_px": 29.505233602997322,
+    "mean_hip_width_px": 20.972421383739306,
+    "mean_ankle_dist_px": 27.409685117574927,
+    "shoulder_to_hip_ratio_px": 1.4068586386031314,
+    "avg_shoulder_vertical_asym_px": 0.6967806816101074,
+    "avg_hip_vertical_asym_px": 9.3846475481987,
+    "mean_shoulder_width_norm": 0.2175051176775067,
+    "mean_hip_width_norm": 0.15460338468864315,
+    "ankle_dist_norm": 0.20205726438972874,
+    "shoulder_vertical_asym_norm": 0.00513649090829852,
+    "hip_vertical_asym_norm": 0.0691812475304559,
+    "estimated_pixel_height": 135.6530545949936
+  },
+  "weaknesses": [
+    "glutes/legs",
+    "hip_asymmetry"
+  ],
+  "weekly_plan": {
+    "Day 1 \u2014 Push": [
+      {
+        "id": "assisted_dips",
+        "name": "Assisted Dips",
+        "muscle_group": "chest",
+        "difficulty": "beginner",
+        "role": "primary"
+      },
+      {
+        "id": "dip_with_forward_lean",
+        "name": "Dip (Forward Lean for Shoulders)",
+        "muscle_group": "shoulders",
+        "difficulty": "intermediate",
+        "role": "primary"
+      },
+      {
+        "id": "lateral_lunge",
+        "name": "Lateral Lunge",
+        "muscle_group": "legs",
+        "difficulty": "beginner",
+        "role": "weakness_fix"
+      },
+      {
+        "id": "sled_push",
+        "name": "Sled Push",
+        "muscle_group": "legs",
+        "difficulty": "intermediate",
+        "role": "weakness_fix"
+      },
+      {
+        "id": "curtsy_lunge",
+        "name": "Curtsy Lunge",
+        "muscle_group": "legs",
+        "difficulty": "intermediate",
+        "role": "weakness_fix"
+      },
+      {
+        "id": "seated_calf_raise",
+        "name": "Seated Calf Raise",
+        "muscle_group": "legs",
+        "difficulty": "beginner",
+        "role": "weakness_fix"
+      }
+    ],
+    "Day 2 \u2014 Pull": [
+      {
+        "id": "squat_jump",
+        "name": "Squat Jump",
+        "muscle_group": "legs",
+        "difficulty": "intermediate",
+        "role": "weakness_fix"
+      },
+      {
+        "id": "sissy_squat",
+        "name": "Sissy Squat",
+        "muscle_group": "legs",
+        "difficulty": "intermediate",
+        "role": "weakness_fix"
+      },
+      {
+        "id": "step_up",
+        "name": "Step-up",
+        "muscle_group": "legs",
+        "difficulty": "beginner",
+        "role": "weakness_fix"
+      },
+      {
+        "id": "farmer_carry",
+        "name": "Farmer\u2019s Carry",
+        "muscle_group": "legs",
+        "difficulty": "beginner",
+        "role": "weakness_fix"
+      },
+      {
+        "id": "jump_squat",
+        "name": "Jump Squat",
+        "muscle_group": "legs",
+        "difficulty": "intermediate",
+        "role": "weakness_fix"
+      },
+      {
+        "id": "kettlebell_swing",
+        "name": "Kettlebell Swing",
+        "muscle_group": "legs",
+        "difficulty": "beginner",
+        "role": "weakness_fix"
+      }
+    ],
+    "Day 3 \u2014 Legs": [
+      {
+        "id": "lunge",
+        "name": "Forward Lunge",
+        "muscle_group": "legs",
+        "difficulty": "beginner",
+        "role": "primary"
+      },
+      {
+        "id": "hip_thrust",
+        "name": "Hip Thrust",
+        "muscle_group": "legs",
+        "difficulty": "beginner",
+        "role": "primary"
+      },
+      {
+        "id": "leg_extension",
+        "name": "Leg Extension",
+        "muscle_group": "legs",
+        "difficulty": "beginner",
+        "role": "weakness_fix"
+      },
+      {
+        "id": "wall_sit",
+        "name": "Wall Sit",
+        "muscle_group": "legs",
+        "difficulty": "beginner",
+        "role": "weakness_fix"
+      },
+      {
+        "id": "calf_raise",
+        "name": "Standing Calf Raise",
+        "muscle_group": "legs",
+        "difficulty": "beginner",
+        "role": "weakness_fix"
+      },
+      {
+        "id": "glute_bridge",
+        "name": "Glute Bridge",
+        "muscle_group": "legs",
+        "difficulty": "beginner",
+        "role": "weakness_fix"
+      }
+    ],
+    "Day 4 \u2014 Core + Mobility": [
+      {
+        "id": "leg_raise",
+        "name": "Leg Raise",
+        "muscle_group": "core",
+        "difficulty": "beginner",
+        "role": "primary"
+      },
+      {
+        "id": "leg_curl",
+        "name": "Leg Curl (Machine)",
+        "muscle_group": "legs",
+        "difficulty": "beginner",
+        "role": "weakness_fix"
+      },
+      {
+        "id": "crunch",
+        "name": "Crunch",
+        "muscle_group": "core",
+        "difficulty": "beginner",
+        "role": "weakness_fix"
+      },
+      {
+        "id": "plank",
+        "name": "Plank",
+        "muscle_group": "core",
+        "difficulty": "beginner",
+        "role": "weakness_fix"
+      },
+      {
+        "id": "bear_crawl",
+        "name": "Bear Crawl",
+        "muscle_group": "core",
+        "difficulty": "intermediate",
+        "role": "weakness_fix"
+      },
+      {
+        "id": "l_sit",
+        "name": "L-Sit",
+        "muscle_group": "core",
+        "difficulty": "advanced",
+        "role": "weakness_fix"
+      }
+    ],
+    "Day 5 \u2014 Full Body / Conditioning": [
+      {
+        "id": "decline_bench",
+        "name": "Decline Bench Press",
+        "muscle_group": "chest",
+        "difficulty": "advanced",
+        "role": "primary"
+      },
+      {
+        "id": "romanian_deadlift",
+        "name": "Romanian Deadlift",
+        "muscle_group": "legs",
+        "difficulty": "intermediate",
+        "role": "primary"
+      },
+      {
+        "id": "back_squat",
+        "name": "Back Squat",
+        "muscle_group": "legs",
+        "difficulty": "intermediate",
+        "role": "primary"
+      },
+      {
+        "id": "windshield_wiper",
+        "name": "Windshield Wiper",
+        "muscle_group": "core",
+        "difficulty": "advanced",
+        "role": "primary"
+      },
+      {
+        "id": "hanging_windshield",
+        "name": "Hanging Windshield Wiper",
+        "muscle_group": "core",
+        "difficulty": "advanced",
+        "role": "weakness_fix"
+      },
+      {
+        "id": "hanging_knee_raise",
+        "name": "Hanging Knee Raise",
+        "muscle_group": "core",
+        "difficulty": "intermediate",
+        "role": "weakness_fix"
+      }
+    ]
+  },
+  "goal": "strength",
+  "height": "170",
+  "weight": "60"
+}
